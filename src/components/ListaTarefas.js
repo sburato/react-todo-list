@@ -3,9 +3,9 @@ import { RiCloseCircleLine } from "react-icons/ri";
 
 const ListaTarefas = ({ tarefas, removerTarefa, atualizarTarefa, atualizarTarefaParaConcluida }) => {
   return (
-    tarefas.map((tarefa, index) => (
+    tarefas.map((tarefa) => (
       <div 
-        key={index} 
+        key={tarefa.id} 
         className={tarefa.concluida ? "tarefa-row risca-tarefa-concluida" : "tarefa-row"}
       >      
         <input      
