@@ -1,15 +1,12 @@
-import Titulo from "./components/Titulo";
-import TodoList from "./components/TodoList";
-
+import "./App.css";
+import React from "react";
+import GerenciadorTarefas from "./components/GerenciadorTarefas";
 
 const App = () => {
   return (
-    <>
-      <center>
-        <Titulo title = "React - TodoList" />
-        <TodoList />
-      </center>
-    </>
+    <div className="tarefa-app">
+      <GerenciadorTarefas />
+    </div>
   );
 }
 

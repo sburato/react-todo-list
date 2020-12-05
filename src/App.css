@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.tarefa-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #292f38;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 8px;
+  padding: 32px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);  
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.header h1 {
+  color: #ccc;
+  font-weight: 300;
+  text-align: center;
+  margin: 30px 20px 60px 20px;
+}
+
+.tarefa-form {
+  margin-bottom: 25px;
+}
+
+.tarefa-input {
+  width: 90%;
+  min-width: 250px;
+  padding: 12px;
+  margin-right: 10px;
+  font-size: 15px;
+  color: #ccc;
+  background-color: #1d222b;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.tarefa-input::placeholder {
+  color: #ccc;
+}
+
+.tarefa-input:focus {
+  border: 2px solid #5D0CFF;
+}
+
+.tarefa-item-input {
+  width: 80%;
+  padding: 5px;
+  font-size: 15px;
+  color: #ccc;
+  background-color: #292f38;
+  border: none;
+  outline: none;
+}
+
+.tarefa-item-input-blue {
+  width: 80%;
+  padding: 5px;
+  font-size: 15px;
+  color: #ccc;
+  background-color: #5D0CFF;
+  border: none;
+  outline: none;
+}
+
+.tarefa-button {
+  padding: 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  background-color: #5D0CFF;  
+  color: #fff;
+  text-transform: capitalize;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);  
+}  
+
+.tarefa-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.tarefa-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;  
+  margin: 1px;
+  border-radius: 5px;
+  width: 96%;
+  margin-left: 12px;      
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.tarefa-checkbox {
+  width: 18px;
+  height: 18px;
+}
+
+.risca-tarefa-concluida {
+  text-decoration: line-through;
+  opacity: 0.4;
+}

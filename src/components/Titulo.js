@@ -1,9 +1,8 @@
 import React from "react";
-import "../styles.css";
 
 const Titulo = (props) => {
   return(
-    <header id="titulo"> { props.title } </header>
+    <header id="titulo"><h1>{ props.title }</h1></header>
   );
 }
 
